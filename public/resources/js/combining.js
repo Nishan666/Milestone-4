@@ -637,7 +637,7 @@
                 }),
                 ue(function (e) {
                   e.innerHTML =
-                    "<a href='' disabled='disabled'></a><select disabled='disabled'><option/></select>";
+                    "<a href='#' disabled='disabled'></a><select disabled='disabled'><option/></select>";
                   var t = d.createElement("input");
                   t.setAttribute("type", "hidden"),
                     e.appendChild(t).setAttribute("name", "D"),
@@ -10077,7 +10077,7 @@
     options: {
       settings: null,
       cursor: "mfp-ajax-cur",
-      tError: '<a href="%url%">The content</a> could not be loaded.',
+      tError: '<a href="#">The content</a> could not be loaded.',
     },
     proto: {
       initAjax: function () {
@@ -10136,7 +10136,7 @@
       cursor: "mfp-zoom-out-cur",
       titleSrc: "title",
       verticalFit: !0,
-      tError: '<a href="%url%">The image</a> could not be loaded.',
+      tError: '<a href="#">The image</a> could not be loaded.',
     },
     proto: {
       initImage: function () {
@@ -12627,12 +12627,12 @@ var FinLab = (function () {
     },
     e = function () {
       var t =
-        '<a href="javascript:void(0);" class="bt-buy-now theme-btn DZBuyNowBtn"><span>Buy Now</span></a><a href="#demo" class="bt-demo theme-btn"><span>Check Demo</span></a>';
-      jQuery("body").append(t),
-        jQuery("body").append(
-          t +
-            '<script id="DZScript" src="https://dzassets.s3.amazonaws.com/w3-global.js?btn_dir=right"></script>'
-        );
+        '<a href="#" class="bt-buy-now theme-btn"><span>Buy Now</span></a><a href="#demo" class="bt-demo theme-btn"><span>Check Demo</span></a>';
+      jQuery("body").append(t)
+        // jQuery("body").append(
+        //   t +
+        //     '<script id="DZScript" src="https://dzassets.s3.amazonaws.com/w3-global.js?btn_dir=right"></script>'
+        // );
     };
   return {
     init: function () {
